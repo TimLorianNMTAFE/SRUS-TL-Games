@@ -1,1 +1,1 @@
-yo WHATS IS UP
+print("Hi everyone what is UP")
