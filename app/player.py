@@ -1,1 +1,4 @@
-print("Hi everyone what is UP")
+class Player:
+    def __init__(self):
+        self.uid = ""
+        self.name = ""
