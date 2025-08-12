@@ -5,3 +5,5 @@ class Player:
 
     def __str__(self):
         return self._uid.__str__(), self._name.__str__()
+
+    key = property(lambda self: self._uid)
