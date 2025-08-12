@@ -1,6 +1,9 @@
+from app.player import Player
+
+
 class PlayerNode:
     def __init__(self, player):
-        self._player = player
+        self._player = Player
         self._next_player = None
         self._previous_player = None
 
