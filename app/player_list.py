@@ -9,4 +9,4 @@ class PlayerList:
         _old_next_player = player_node.PlayerNode.get_next_player(player)
         _new_head = player_node.PlayerNode.get_player(player)
         _new_next_player = player_node.PlayerNode.get_next_player(player)
-        self._head = player_node.PlayerNode.set_player(player)
+        self._head = _new_head
