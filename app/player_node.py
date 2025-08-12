@@ -16,6 +16,10 @@ class PlayerNode:
     def get_next_player(self):
         return self._next_player
 
+    # setter method next player
+    def set_next_player(self, player):
+        self._next_player = player
+
     # getter method previous player
     def get_previous_player(self):
         return self._previous_player
