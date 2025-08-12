@@ -6,7 +6,7 @@ class UnitTestMethods(unittest.TestCase):
     test_player = Player("Tim", 13)
 
     def test_name(self):
-        self.assertEqual(self.test_player.name, "Tim")
+        self.assertEqual(self.test_player._name, "Tim")
 
     def test_uniqueid(self):
-        self.assertEqual(self.test_player.uid, 13)
+        self.assertEqual(self.test_player._uid, 13)
