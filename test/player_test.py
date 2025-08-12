@@ -1,2 +1,12 @@
-# TODO unit test 1 for name
-# TODO unit test 2 for uid
+from app.player import Player
+import unittest
+
+
+class UnitTestMethods(unittest.TestCase):
+    test_player = Player("Tim", 13)
+
+    def test_name(self):
+        self.assertEqual(self.test_player.name, "Tim")
+
+    def test_uniqueid(self):
+        self.assertEqual(self.test_player.uid, 13)
