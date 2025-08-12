@@ -1,12 +1,18 @@
-import player_node
+from app.player_node import PlayerNode
+
 
 class PlayerList:
     def __init__(self):
         self._head = None
+        self.count = 0
 
     def push(self, player):
-        _old_head = PlayerList.__init__(self)._head
-        _old_next_player = player_node.PlayerNode.get_next_player(player)
-        _new_head = player_node.PlayerNode.get_player(player)
-        _new_next_player = player_node.PlayerNode.get_next_player(player)
-        self._head = _new_head
+        if self._head is not None:
+            new_player = PlayerNode(player)
+            new_player.set_next_player(self._head)
+            self._head.previous_player = new_player
+        else:
+            new_player = PlayerNode(player)
+        self._head = new_player
+        self.count += 1
+        
