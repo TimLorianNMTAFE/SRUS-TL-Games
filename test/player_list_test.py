@@ -15,8 +15,9 @@ class PlayerListTestMethods(unittest.TestCase):
         self.assertEqual(type(test_list.get_head()), type(test_node))
         print(type(test_list.get_head()))
         print(type(test_node))
-        # print(test_node.node_id_as_string())
-        # self.assertEqual(self.test_player._name, "Tim")
 
-    # def test_push_when_list_is_not_empty(self):
-        # self.assertEqual(self.test_player._uid, 13)
+    def test_push_when_list_is_not_empty(self):
+        pre_existing_player = Player("Jimbo", 11)
+        pre_existing_node = PlayerNode(pre_existing_player)
+        test_list.push(pre_existing_node)
+        test_list.push(test_node)

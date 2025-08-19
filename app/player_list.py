@@ -6,7 +6,7 @@ class PlayerList:
         self._head = None
         self.count = 0
 
-    def push(self, player):
+    def push(self, player):  # For Step 5: inserts a new node at the head of the list
         if self._head is not None:
             new_player_node = PlayerNode(player)
             new_player_node.set_next_player(self._head)
